@@ -23,10 +23,26 @@ final class FilmCollectionCell: UICollectionViewCell {
         
         addSubiews()
         setUpConstraints()
+        setupView()
+        
+        contentView.layer.backgroundColor = UIColor.white.cgColor
+        
+        contentView.layer.cornerRadius = 20
+        contentView.layer.shadowOffset = CGSize(width: 0,
+                                          height: 4)
+        contentView.layer.shadowRadius = 5
+        contentView.layer.shadowOpacity = 0.2
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupView() {
+        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        
+        titleLabel.contentHuggingPriority(for: .horizontal)
+        releaseLabel.contentHuggingPriority(for: .horizontal)
     }
     
     private func addSubiews() {
@@ -40,19 +56,18 @@ final class FilmCollectionCell: UICollectionViewCell {
     
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10.0),
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10.0),
-            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10.0),
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15.0),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
             
-            releaseLabel.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            releaseLabel.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 10.0),
-            releaseLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10.0),
+            releaseLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0),
+            releaseLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 15.0),
+            releaseLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20.0),
             releaseLabel.heightAnchor.constraint(equalTo: titleLabel.heightAnchor)
         ])
     }
     
     private func setUpViewModel() {
         titleLabel.text = viewModel.title
-        releaseLabel.text = viewModel.release
+        releaseLabel.text = "director: \(viewModel.director)"
     }
 }

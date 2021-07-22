@@ -51,8 +51,8 @@ final class HomeView: UIView {
         let defaultMargin: CGFloat = 4.0
         
         NSLayoutConstraint.activate([
-            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            collectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             collectionView.topAnchor.constraint(equalTo: topAnchor, constant: defaultMargin),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
@@ -75,8 +75,8 @@ final class HomeView: UIView {
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: size, subitem: item, count: 1)
         
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-        section.interGroupSpacing = 5
+        section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 5, trailing: 5)
+        section.interGroupSpacing = 20
         
         return UICollectionViewCompositionalLayout(section: section)
     }
