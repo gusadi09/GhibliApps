@@ -21,8 +21,9 @@
 		EC1571D326A9963D009F2A50 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1571D226A9963D009F2A50 /* DetailViewController.swift */; };
 		EC15721A26A99FFE009F2A50 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15721926A99FFE009F2A50 /* ActivityIndicatorView.swift */; };
 		EC15722A26A9A01F009F2A50 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15722526A9A01F009F2A50 /* Film.swift */; };
-		EC15722B26A9A01F009F2A50 /* PlayersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15722726A9A01F009F2A50 /* PlayersService.swift */; };
-		EC15723626A9A1AC009F2A50 /* FilmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15723526A9A1AC009F2A50 /* FilmData.swift */; };
+		EC15722B26A9A01F009F2A50 /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15722726A9A01F009F2A50 /* FilmService.swift */; };
+		EC15724326A9D22B009F2A50 /* FilmCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15724126A9D22B009F2A50 /* FilmCellViewModel.swift */; };
+		EC15724426A9D22B009F2A50 /* FilmCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15724226A9D22B009F2A50 /* FilmCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +64,9 @@
 		EC1571D226A9963D009F2A50 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EC15721926A99FFE009F2A50 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		EC15722526A9A01F009F2A50 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
-		EC15722726A9A01F009F2A50 /* PlayersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersService.swift; sourceTree = "<group>"; };
-		EC15723526A9A1AC009F2A50 /* FilmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmData.swift; sourceTree = "<group>"; };
+		EC15722726A9A01F009F2A50 /* FilmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
+		EC15724126A9D22B009F2A50 /* FilmCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmCellViewModel.swift; sourceTree = "<group>"; };
+		EC15724226A9D22B009F2A50 /* FilmCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				EC15717C26A993C3009F2A50 /* HomeViewController.swift */,
 				EC1571B726A995FA009F2A50 /* HomeView.swift */,
 				EC1571BF26A99603009F2A50 /* HomeViewModel.swift */,
+				EC15724026A9D22B009F2A50 /* Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -202,7 +205,6 @@
 		EC15722226A9A01F009F2A50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EC15723526A9A1AC009F2A50 /* FilmData.swift */,
 				EC15722526A9A01F009F2A50 /* Film.swift */,
 			);
 			path = Model;
@@ -211,9 +213,18 @@
 		EC15722626A9A01F009F2A50 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				EC15722726A9A01F009F2A50 /* PlayersService.swift */,
+				EC15722726A9A01F009F2A50 /* FilmService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		EC15724026A9D22B009F2A50 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC15724126A9D22B009F2A50 /* FilmCellViewModel.swift */,
+				EC15724226A9D22B009F2A50 /* FilmCollectionCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,11 +362,12 @@
 				EC1571B826A995FA009F2A50 /* HomeView.swift in Sources */,
 				EC15722A26A9A01F009F2A50 /* Film.swift in Sources */,
 				EC15717926A993C3009F2A50 /* AppDelegate.swift in Sources */,
-				EC15723626A9A1AC009F2A50 /* FilmData.swift in Sources */,
 				EC1571C026A99603009F2A50 /* HomeViewModel.swift in Sources */,
+				EC15724426A9D22B009F2A50 /* FilmCollectionCell.swift in Sources */,
 				EC15721A26A99FFE009F2A50 /* ActivityIndicatorView.swift in Sources */,
 				EC15717B26A993C3009F2A50 /* SceneDelegate.swift in Sources */,
-				EC15722B26A9A01F009F2A50 /* PlayersService.swift in Sources */,
+				EC15722B26A9A01F009F2A50 /* FilmService.swift in Sources */,
+				EC15724326A9D22B009F2A50 /* FilmCellViewModel.swift in Sources */,
 				EC1571D326A9963D009F2A50 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

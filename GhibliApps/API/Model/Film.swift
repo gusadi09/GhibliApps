@@ -1,8 +1,8 @@
 //
-//  Player.swift
-//  CombineDemo
+//  Film.swift
+//  GhibliApps
 //
-//  Created by Michal Cichecki on 30/06/2019.
+//  Created by Gus Adi on 22/07/21.
 //
 
 import Foundation
