@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC15717926A993C3009F2A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717826A993C3009F2A50 /* AppDelegate.swift */; };
+		EC15717B26A993C3009F2A50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717A26A993C3009F2A50 /* SceneDelegate.swift */; };
+		EC15717D26A993C3009F2A50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717C26A993C3009F2A50 /* ViewController.swift */; };
+		EC15718026A993C3009F2A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC15717E26A993C3009F2A50 /* Main.storyboard */; };
+		EC15718226A993C4009F2A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC15718126A993C4009F2A50 /* Assets.xcassets */; };
+		EC15718526A993C4009F2A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC15718326A993C4009F2A50 /* LaunchScreen.storyboard */; };
+		EC15719026A993C4009F2A50 /* GhibliAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15718F26A993C4009F2A50 /* GhibliAppsTests.swift */; };
+		EC15719B26A993C4009F2A50 /* GhibliAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15719A26A993C4009F2A50 /* GhibliAppsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC15718C26A993C4009F2A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC15716D26A993C3009F2A50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC15717426A993C3009F2A50;
+			remoteInfo = GhibliApps;
+		};
+		EC15719726A993C4009F2A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC15716D26A993C3009F2A50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC15717426A993C3009F2A50;
+			remoteInfo = GhibliApps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC15717526A993C3009F2A50 /* GhibliApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhibliApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC15717826A993C3009F2A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC15717A26A993C3009F2A50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC15717C26A993C3009F2A50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC15717F26A993C3009F2A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC15718126A993C4009F2A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC15718426A993C4009F2A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC15718626A993C4009F2A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC15718B26A993C4009F2A50 /* GhibliAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhibliAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC15718F26A993C4009F2A50 /* GhibliAppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliAppsTests.swift; sourceTree = "<group>"; };
+		EC15719126A993C4009F2A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC15719626A993C4009F2A50 /* GhibliAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhibliAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC15719A26A993C4009F2A50 /* GhibliAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliAppsUITests.swift; sourceTree = "<group>"; };
+		EC15719C26A993C4009F2A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC15717226A993C3009F2A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15718826A993C4009F2A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15719326A993C4009F2A50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC15716C26A993C3009F2A50 = {
+			isa = PBXGroup;
+			children = (
+				EC15717726A993C3009F2A50 /* GhibliApps */,
+				EC15718E26A993C4009F2A50 /* GhibliAppsTests */,
+				EC15719926A993C4009F2A50 /* GhibliAppsUITests */,
+				EC15717626A993C3009F2A50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC15717626A993C3009F2A50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC15717526A993C3009F2A50 /* GhibliApps.app */,
+				EC15718B26A993C4009F2A50 /* GhibliAppsTests.xctest */,
+				EC15719626A993C4009F2A50 /* GhibliAppsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC15717726A993C3009F2A50 /* GhibliApps */ = {
+			isa = PBXGroup;
+			children = (
+				EC15717826A993C3009F2A50 /* AppDelegate.swift */,
+				EC15717A26A993C3009F2A50 /* SceneDelegate.swift */,
+				EC15717C26A993C3009F2A50 /* ViewController.swift */,
+				EC15717E26A993C3009F2A50 /* Main.storyboard */,
+				EC15718126A993C4009F2A50 /* Assets.xcassets */,
+				EC15718326A993C4009F2A50 /* LaunchScreen.storyboard */,
+				EC15718626A993C4009F2A50 /* Info.plist */,
+			);
+			path = GhibliApps;
+			sourceTree = "<group>";
+		};
+		EC15718E26A993C4009F2A50 /* GhibliAppsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC15718F26A993C4009F2A50 /* GhibliAppsTests.swift */,
+				EC15719126A993C4009F2A50 /* Info.plist */,
+			);
+			path = GhibliAppsTests;
+			sourceTree = "<group>";
+		};
+		EC15719926A993C4009F2A50 /* GhibliAppsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC15719A26A993C4009F2A50 /* GhibliAppsUITests.swift */,
+				EC15719C26A993C4009F2A50 /* Info.plist */,
+			);
+			path = GhibliAppsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC15717426A993C3009F2A50 /* GhibliApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC15719F26A993C4009F2A50 /* Build configuration list for PBXNativeTarget "GhibliApps" */;
+			buildPhases = (
+				EC15717126A993C3009F2A50 /* Sources */,
+				EC15717226A993C3009F2A50 /* Frameworks */,
+				EC15717326A993C3009F2A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GhibliApps;
+			productName = GhibliApps;
+			productReference = EC15717526A993C3009F2A50 /* GhibliApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC15718A26A993C4009F2A50 /* GhibliAppsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC1571A226A993C4009F2A50 /* Build configuration list for PBXNativeTarget "GhibliAppsTests" */;
+			buildPhases = (
+				EC15718726A993C4009F2A50 /* Sources */,
+				EC15718826A993C4009F2A50 /* Frameworks */,
+				EC15718926A993C4009F2A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC15718D26A993C4009F2A50 /* PBXTargetDependency */,
+			);
+			name = GhibliAppsTests;
+			productName = GhibliAppsTests;
+			productReference = EC15718B26A993C4009F2A50 /* GhibliAppsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC15719526A993C4009F2A50 /* GhibliAppsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC1571A526A993C4009F2A50 /* Build configuration list for PBXNativeTarget "GhibliAppsUITests" */;
+			buildPhases = (
+				EC15719226A993C4009F2A50 /* Sources */,
+				EC15719326A993C4009F2A50 /* Frameworks */,
+				EC15719426A993C4009F2A50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC15719826A993C4009F2A50 /* PBXTargetDependency */,
+			);
+			name = GhibliAppsUITests;
+			productName = GhibliAppsUITests;
+			productReference = EC15719626A993C4009F2A50 /* GhibliAppsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC15716D26A993C3009F2A50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EC15717426A993C3009F2A50 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EC15718A26A993C4009F2A50 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EC15717426A993C3009F2A50;
+					};
+					EC15719526A993C4009F2A50 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EC15717426A993C3009F2A50;
+					};
+				};
+			};
+			buildConfigurationList = EC15717026A993C3009F2A50 /* Build configuration list for PBXProject "GhibliApps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC15716C26A993C3009F2A50;
+			productRefGroup = EC15717626A993C3009F2A50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC15717426A993C3009F2A50 /* GhibliApps */,
+				EC15718A26A993C4009F2A50 /* GhibliAppsTests */,
+				EC15719526A993C4009F2A50 /* GhibliAppsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC15717326A993C3009F2A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC15718526A993C4009F2A50 /* LaunchScreen.storyboard in Resources */,
+				EC15718226A993C4009F2A50 /* Assets.xcassets in Resources */,
+				EC15718026A993C3009F2A50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15718926A993C4009F2A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15719426A993C4009F2A50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC15717126A993C3009F2A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC15717D26A993C3009F2A50 /* ViewController.swift in Sources */,
+				EC15717926A993C3009F2A50 /* AppDelegate.swift in Sources */,
+				EC15717B26A993C3009F2A50 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15718726A993C4009F2A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC15719026A993C4009F2A50 /* GhibliAppsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC15719226A993C4009F2A50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC15719B26A993C4009F2A50 /* GhibliAppsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC15718D26A993C4009F2A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC15717426A993C3009F2A50 /* GhibliApps */;
+			targetProxy = EC15718C26A993C4009F2A50 /* PBXContainerItemProxy */;
+		};
+		EC15719826A993C4009F2A50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC15717426A993C3009F2A50 /* GhibliApps */;
+			targetProxy = EC15719726A993C4009F2A50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC15717E26A993C3009F2A50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC15717F26A993C3009F2A50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC15718326A993C4009F2A50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC15718426A993C4009F2A50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC15719D26A993C4009F2A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC15719E26A993C4009F2A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC1571A026A993C4009F2A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = GhibliApps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appStudio.GhibliApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC1571A126A993C4009F2A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = GhibliApps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appStudio.GhibliApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC1571A326A993C4009F2A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = GhibliAppsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appStudio.GhibliAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GhibliApps.app/GhibliApps";
+			};
+			name = Debug;
+		};
+		EC1571A426A993C4009F2A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = GhibliAppsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appStudio.GhibliAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GhibliApps.app/GhibliApps";
+			};
+			name = Release;
+		};
+		EC1571A626A993C4009F2A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = GhibliAppsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appStudio.GhibliAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GhibliApps;
+			};
+			name = Debug;
+		};
+		EC1571A726A993C4009F2A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M5M727687;
+				INFOPLIST_FILE = GhibliAppsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appStudio.GhibliAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GhibliApps;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC15717026A993C3009F2A50 /* Build configuration list for PBXProject "GhibliApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC15719D26A993C4009F2A50 /* Debug */,
+				EC15719E26A993C4009F2A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC15719F26A993C4009F2A50 /* Build configuration list for PBXNativeTarget "GhibliApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1571A026A993C4009F2A50 /* Debug */,
+				EC1571A126A993C4009F2A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC1571A226A993C4009F2A50 /* Build configuration list for PBXNativeTarget "GhibliAppsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1571A326A993C4009F2A50 /* Debug */,
+				EC1571A426A993C4009F2A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC1571A526A993C4009F2A50 /* Build configuration list for PBXNativeTarget "GhibliAppsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC1571A626A993C4009F2A50 /* Debug */,
+				EC1571A726A993C4009F2A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC15716D26A993C3009F2A50 /* Project object */;
+}
