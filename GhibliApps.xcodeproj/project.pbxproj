@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		EC15717926A993C3009F2A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717826A993C3009F2A50 /* AppDelegate.swift */; };
 		EC15717B26A993C3009F2A50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717A26A993C3009F2A50 /* SceneDelegate.swift */; };
-		EC15717D26A993C3009F2A50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717C26A993C3009F2A50 /* ViewController.swift */; };
-		EC15718026A993C3009F2A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC15717E26A993C3009F2A50 /* Main.storyboard */; };
+		EC15717D26A993C3009F2A50 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15717C26A993C3009F2A50 /* HomeViewController.swift */; };
 		EC15718226A993C4009F2A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC15718126A993C4009F2A50 /* Assets.xcassets */; };
 		EC15718526A993C4009F2A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC15718326A993C4009F2A50 /* LaunchScreen.storyboard */; };
 		EC15719026A993C4009F2A50 /* GhibliAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15718F26A993C4009F2A50 /* GhibliAppsTests.swift */; };
 		EC15719B26A993C4009F2A50 /* GhibliAppsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15719A26A993C4009F2A50 /* GhibliAppsUITests.swift */; };
+		EC1571B826A995FA009F2A50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1571B726A995FA009F2A50 /* HomeView.swift */; };
+		EC1571C026A99603009F2A50 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1571BF26A99603009F2A50 /* HomeViewModel.swift */; };
+		EC1571C626A9961C009F2A50 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1571C526A9961C009F2A50 /* DetailView.swift */; };
+		EC1571CE26A99624009F2A50 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1571CD26A99624009F2A50 /* DetailViewModel.swift */; };
+		EC1571D326A9963D009F2A50 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1571D226A9963D009F2A50 /* DetailViewController.swift */; };
+		EC15721A26A99FFE009F2A50 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15721926A99FFE009F2A50 /* ActivityIndicatorView.swift */; };
+		EC15722A26A9A01F009F2A50 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15722526A9A01F009F2A50 /* Film.swift */; };
+		EC15722B26A9A01F009F2A50 /* PlayersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15722726A9A01F009F2A50 /* PlayersService.swift */; };
+		EC15723626A9A1AC009F2A50 /* FilmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC15723526A9A1AC009F2A50 /* FilmData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +46,7 @@
 		EC15717526A993C3009F2A50 /* GhibliApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhibliApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC15717826A993C3009F2A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC15717A26A993C3009F2A50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC15717C26A993C3009F2A50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC15717F26A993C3009F2A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC15717C26A993C3009F2A50 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC15718126A993C4009F2A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC15718426A993C4009F2A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC15718626A993C4009F2A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		EC15719626A993C4009F2A50 /* GhibliAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GhibliAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC15719A26A993C4009F2A50 /* GhibliAppsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhibliAppsUITests.swift; sourceTree = "<group>"; };
 		EC15719C26A993C4009F2A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC1571B726A995FA009F2A50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EC1571BF26A99603009F2A50 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EC1571C526A9961C009F2A50 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EC1571CD26A99624009F2A50 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		EC1571D226A9963D009F2A50 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EC15721926A99FFE009F2A50 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		EC15722526A9A01F009F2A50 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		EC15722726A9A01F009F2A50 /* PlayersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersService.swift; sourceTree = "<group>"; };
+		EC15723526A9A1AC009F2A50 /* FilmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +115,10 @@
 		EC15717726A993C3009F2A50 /* GhibliApps */ = {
 			isa = PBXGroup;
 			children = (
-				EC15717826A993C3009F2A50 /* AppDelegate.swift */,
-				EC15717A26A993C3009F2A50 /* SceneDelegate.swift */,
-				EC15717C26A993C3009F2A50 /* ViewController.swift */,
-				EC15717E26A993C3009F2A50 /* Main.storyboard */,
+				EC15722126A9A01F009F2A50 /* API */,
+				EC15721826A99FE9009F2A50 /* Shared */,
+				EC1571AC26A99415009F2A50 /* Featured */,
+				EC1571AB26A993EF009F2A50 /* Common */,
 				EC15718126A993C4009F2A50 /* Assets.xcassets */,
 				EC15718326A993C4009F2A50 /* LaunchScreen.storyboard */,
 				EC15718626A993C4009F2A50 /* Info.plist */,
@@ -126,6 +142,78 @@
 				EC15719C26A993C4009F2A50 /* Info.plist */,
 			);
 			path = GhibliAppsUITests;
+			sourceTree = "<group>";
+		};
+		EC1571AB26A993EF009F2A50 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC15717826A993C3009F2A50 /* AppDelegate.swift */,
+				EC15717A26A993C3009F2A50 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC1571AC26A99415009F2A50 /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				EC1571C426A99609009F2A50 /* Detail */,
+				EC1571B626A995E8009F2A50 /* Home */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		EC1571B626A995E8009F2A50 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC15717C26A993C3009F2A50 /* HomeViewController.swift */,
+				EC1571B726A995FA009F2A50 /* HomeView.swift */,
+				EC1571BF26A99603009F2A50 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC1571C426A99609009F2A50 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EC1571C526A9961C009F2A50 /* DetailView.swift */,
+				EC1571CD26A99624009F2A50 /* DetailViewModel.swift */,
+				EC1571D226A9963D009F2A50 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		EC15721826A99FE9009F2A50 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EC15721926A99FFE009F2A50 /* ActivityIndicatorView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EC15722126A9A01F009F2A50 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC15722226A9A01F009F2A50 /* Model */,
+				EC15722626A9A01F009F2A50 /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EC15722226A9A01F009F2A50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC15723526A9A1AC009F2A50 /* FilmData.swift */,
+				EC15722526A9A01F009F2A50 /* Film.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC15722626A9A01F009F2A50 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC15722726A9A01F009F2A50 /* PlayersService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +321,6 @@
 			files = (
 				EC15718526A993C4009F2A50 /* LaunchScreen.storyboard in Resources */,
 				EC15718226A993C4009F2A50 /* Assets.xcassets in Resources */,
-				EC15718026A993C3009F2A50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC15717D26A993C3009F2A50 /* ViewController.swift in Sources */,
+				EC15717D26A993C3009F2A50 /* HomeViewController.swift in Sources */,
+				EC1571C626A9961C009F2A50 /* DetailView.swift in Sources */,
+				EC1571CE26A99624009F2A50 /* DetailViewModel.swift in Sources */,
+				EC1571B826A995FA009F2A50 /* HomeView.swift in Sources */,
+				EC15722A26A9A01F009F2A50 /* Film.swift in Sources */,
 				EC15717926A993C3009F2A50 /* AppDelegate.swift in Sources */,
+				EC15723626A9A1AC009F2A50 /* FilmData.swift in Sources */,
+				EC1571C026A99603009F2A50 /* HomeViewModel.swift in Sources */,
+				EC15721A26A99FFE009F2A50 /* ActivityIndicatorView.swift in Sources */,
 				EC15717B26A993C3009F2A50 /* SceneDelegate.swift in Sources */,
+				EC15722B26A9A01F009F2A50 /* PlayersService.swift in Sources */,
+				EC1571D326A9963D009F2A50 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +392,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC15717E26A993C3009F2A50 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC15717F26A993C3009F2A50 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC15718326A993C4009F2A50 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				INFOPLIST_FILE = GhibliApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M5M727687;
 				INFOPLIST_FILE = GhibliApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
