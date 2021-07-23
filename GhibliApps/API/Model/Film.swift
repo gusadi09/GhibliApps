@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Film: Equatable, Hashable, Decodable {
+struct Film: Equatable, Hashable, Codable {
     var title: String
     var description: String
     var release_date: String

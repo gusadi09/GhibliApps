@@ -45,6 +45,17 @@ final class HomeViewController: UIViewController {
         
         view.backgroundColor = .white
         
+        contentView.collectionView.delegate = self
+        
+        setUpTableView()
+        configureDataSource()
+        setUpBindings()
+        
+        setupNavbar()
+    }
+    
+    func setupNavbar() {
+        
         navigationController?.navigationBar.topItem?.title = "Home"
         navigationController?.navigationBar.prefersLargeTitles = true
         
@@ -52,15 +63,6 @@ final class HomeViewController: UIViewController {
         let button2 = UIBarButtonItem(image: UIImage(named: "sort-descending"), style: .plain, target: self, action: #selector(descending))
         
         self.navigationItem.rightBarButtonItems = [button1, button2]
-        
-        
-        contentView.collectionView.delegate = self
-        
-        setUpTableView()
-        configureDataSource()
-        setUpBindings()
-        
-        
     }
     
     @objc func ascending() {
@@ -166,10 +168,6 @@ extension HomeViewController: UICollectionViewDelegate {
         let detailView = DetailViewController()
         detailView.viewModel = DetailViewModel(films: cell?.viewModel.film ?? Film(title: "N/A", description: "N/A", release_date: "N/A", director: "N/A"))
         
-        
-        
         navigationController?.pushViewController(detailView, animated: true)
-        
-        
     }
 }

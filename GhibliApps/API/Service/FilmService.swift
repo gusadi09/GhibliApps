@@ -50,4 +50,23 @@ final class FilmService: FilmServiceProtocol {
         
         
     }
+    
+    func apiService(completion: @escaping ([Film]) -> Void) {
+        let url = URL(string: "https://ghibliapi.herokuapp.com/films")!
+        let session = URLSession.shared
+        
+        session.dataTask(with: url) { (data, _, error) in
+            do {
+                if let d = data {
+                    let json = try JSONDecoder().decode([Film].self, from: d)
+                    completion(json)
+               }
+            }
+            catch {
+                print("Error \(error)")
+                
+            }
+        }.resume()
+        
+    }
 }
