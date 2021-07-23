@@ -68,6 +68,6 @@ final class FilmCollectionCell: UICollectionViewCell {
     
     private func setUpViewModel() {
         titleLabel.text = viewModel.title
-        releaseLabel.text = "director: \(viewModel.director)"
+        releaseLabel.text = "release: \(viewModel.release)"
     }
 }

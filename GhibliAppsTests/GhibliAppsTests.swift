@@ -27,7 +27,7 @@ class GhibliAppsTests: XCTestCase {
         super.tearDown()
     }
 
-    func test_isarrayfilmempty() throws {
+    func test_isarrayfillmempty() throws {
         
         XCTAssertTrue(subject.films.isEmpty)
     }

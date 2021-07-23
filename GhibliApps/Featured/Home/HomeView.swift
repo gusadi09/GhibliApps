@@ -65,6 +65,8 @@ final class HomeView: UIView {
     
     private func setUpViews() {
         collectionView.backgroundColor = .white
+        
+        collectionView.showsVerticalScrollIndicator = false
     }
     
     private func createLayout() -> UICollectionViewLayout {

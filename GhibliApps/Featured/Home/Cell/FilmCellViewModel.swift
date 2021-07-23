@@ -10,9 +10,9 @@ import Combine
 
 final class FilmCellViewModel {
     @Published var title: String = ""
-    @Published var director: String = ""
+    @Published var release: String = ""
         
-    private let film: Film
+    let film: Film
     
     init(films: Film) {
         self.film = films
@@ -22,6 +22,6 @@ final class FilmCellViewModel {
     
     private func setUpBindings() {
         title = film.title
-        director = film.director
+        release = film.release_date
     }
 }

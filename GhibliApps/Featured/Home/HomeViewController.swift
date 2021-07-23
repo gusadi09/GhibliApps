@@ -41,6 +41,8 @@ final class HomeViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = "Home"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        contentView.collectionView.delegate = self
+        
         setUpTableView()
         configureDataSource()
         setUpBindings()
@@ -117,5 +119,18 @@ extension HomeViewController {
                 cell?.viewModel = FilmCellViewModel(films: film)
                 return cell
             })
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = contentView.collectionView.cellForItem(at: indexPath) as? FilmCollectionCell
+        let detailView = DetailViewController()
+        detailView.items = cell?.viewModel.film
+        
+        navigationController?.pushViewController(detailView, animated: true)
+        
+        
     }
 }
