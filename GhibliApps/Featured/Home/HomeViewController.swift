@@ -20,8 +20,15 @@ final class HomeViewController: UIViewController {
     
     private var dataSource: DataSource?
     
+    private var snapshot: Snapshot
+    
+    private var films = [Film]()
+    
+    var toolBarItems = [UIBarButtonItem]()
+    
     init(viewModel: HomeViewModel = HomeViewModel()) {
         self.viewModel = viewModel
+        self.snapshot = Snapshot()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,11 +42,17 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         view.backgroundColor = .white
         
         navigationController?.navigationBar.topItem?.title = "Home"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let button1 = UIBarButtonItem(image: UIImage(named: "sort-ascending"), style: .plain, target: self, action: #selector(ascending))
+        let button2 = UIBarButtonItem(image: UIImage(named: "sort-descending"), style: .plain, target: self, action: #selector(descending))
+        
+        self.navigationItem.rightBarButtonItems = [button1, button2]
+        
         
         contentView.collectionView.delegate = self
         
@@ -48,6 +61,30 @@ final class HomeViewController: UIViewController {
         setUpBindings()
         
         
+    }
+    
+    @objc func ascending() {
+        films = viewModel.films.sorted(by: { $0.release_date < $1.release_date })
+        snapshot = Snapshot()
+        
+        snapshot.appendSections([.film])
+        snapshot.appendItems(films)
+        
+        dataSource?.apply(snapshot, animatingDifferences: true)
+        
+        contentView.collectionView.reloadData()
+    }
+    
+    @objc func descending() {
+        films = viewModel.films.sorted(by: { $0.release_date > $1.release_date })
+        snapshot = Snapshot()
+        
+        snapshot.appendSections([.film])
+        snapshot.appendItems(films)
+        
+        dataSource?.apply(snapshot, animatingDifferences: true)
+        
+        contentView.collectionView.reloadData()
     }
     
     private func setUpTableView() {
@@ -97,12 +134,12 @@ final class HomeViewController: UIViewController {
     }
     
     func updateSections() {
-        var snapshot = Snapshot()
+        films = viewModel.films
+        
+        snapshot = Snapshot()
         
         snapshot.appendSections([.film])
-        snapshot.appendItems(viewModel.films)
-        
-        print(snapshot.itemIdentifiers)
+        snapshot.appendItems(films)
         
         dataSource?.apply(snapshot, animatingDifferences: true)
     }
@@ -128,6 +165,8 @@ extension HomeViewController: UICollectionViewDelegate {
         let cell = contentView.collectionView.cellForItem(at: indexPath) as? FilmCollectionCell
         let detailView = DetailViewController()
         detailView.viewModel = DetailViewModel(films: cell?.viewModel.film ?? Film(title: "N/A", description: "N/A", release_date: "N/A", director: "N/A"))
+        
+        
         
         navigationController?.pushViewController(detailView, animated: true)
         

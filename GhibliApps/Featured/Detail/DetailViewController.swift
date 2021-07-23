@@ -14,10 +14,10 @@ class DetailViewController: UIViewController {
     }
     
     private lazy var contentView = DetailView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = .white
         view = contentView
     }
@@ -31,7 +31,7 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = false
     }
-
+    
     private func setUpViewModel() {
         contentView.titleLabel.text = viewModel.title
         contentView.desc.text = "Description : \n\(viewModel.description)"
