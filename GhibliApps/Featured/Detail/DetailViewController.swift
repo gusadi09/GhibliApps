@@ -9,13 +9,17 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var items: Film?
+    var viewModel: DetailViewModel! {
+        didSet { setUpViewModel() }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        print(items?.release_date)
     }
 
+    private func setUpViewModel() {
+        print(viewModel.release)
+    }
 }

@@ -127,7 +127,7 @@ extension HomeViewController: UICollectionViewDelegate {
         
         let cell = contentView.collectionView.cellForItem(at: indexPath) as? FilmCollectionCell
         let detailView = DetailViewController()
-        detailView.items = cell?.viewModel.film
+        detailView.viewModel = DetailViewModel(films: cell?.viewModel.film ?? Film(title: "N/A", description: "N/A", release_date: "N/A", director: "N/A"))
         
         navigationController?.pushViewController(detailView, animated: true)
         
